@@ -1,0 +1,13 @@
+#!/bin/bash
+
+max_size=1000
+file_path=dist/index.html
+files_count=$(du -h --apparent-size -t -${max_size} ${file_path} | wc -l)
+
+du -h --apparent-size dist/*
+
+if [[ "$files_count" -eq "1" ]]; then
+    exit 0;
+else
+    exit 1;
+fi
