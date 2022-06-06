@@ -1,6 +1,6 @@
 #!/bin/bash
 
-max_size=1000
+max_size=1010
 file_path=dist/index.html
 files_count=$(du -h --apparent-size -t -${max_size} ${file_path} | wc -l)
 
