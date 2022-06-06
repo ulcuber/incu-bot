@@ -2,6 +2,8 @@
 
 Minimal form for embedded system
 
+[Live Preview](https://ulcuber.github.io/incu-bot/)
+
 ![screen](screenshots/screen.jpg)
 
 -   Paper style
