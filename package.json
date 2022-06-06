@@ -1,6 +1,6 @@
 {
     "scripts": {
-        "prod": "html-minifier --collapse-boolean-attributes --collapse-inline-tag-whitespace --collapse-whitespace --minify-css true --minify-js true --remove-attribute-quotes --remove-comments --remove-empty-attributes --remove-empty-elements --remove-optional-tags --remove-redundant-attributes --remove-tag-whitespace --use-short-doctype --file-ext=html --output-dir=dist --input-dir=src",
+        "prod": "html-minifier --collapse-boolean-attributes --collapse-inline-tag-whitespace --collapse-whitespace --minify-css true --minify-js true --remove-attribute-quotes --remove-comments --remove-empty-attributes --remove-empty-elements --remove-optional-tags --remove-redundant-attributes --remove-tag-whitespace --use-short-doctype --file-ext=html --output=dist/index.html src/index.html",
         "test": "./test"
     },
     "dependencies": {
