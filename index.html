@@ -1,6 +1,8 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
     <head>
         <meta charset="UTF-8" />
+        <meta name="viewport" content="initial-scale=1.0" />
         <title>IncuBot</title>
     </head>
     <body>
@@ -13,17 +15,14 @@
             label,
             button {
                 cursor: pointer;
-                display: block;
             }
             input,
             button,
             fieldset {
                 display: block;
                 color: #41403e;
-                border-color: #41403e;
                 background: transparent;
-                border-style: solid;
-                border-width: 2px;
+                border: 2px solid #41403e;
                 outline: none;
                 font-size: 1.5rem;
                 padding: 0.5rem;
@@ -33,6 +32,9 @@
                 border-top-left-radius: 9% 3%;
                 border-top-right-radius: 3% 6%;
             }
+            input {
+                width: calc(100% - 1rem - 4px);
+            }
             input:focus,
             button:focus,
             button:hover {
@@ -40,9 +42,8 @@
             }
             div,
             h1 {
-                display: flex;
-                flex-wrap: wrap;
-                justify-content: center;
+                margin: auto;
+                width: fit-content;
             }
         </style>
         <h1>IncuBot</h1>
@@ -50,18 +51,31 @@
             <form>
                 <fieldset>
                     Wi-Fi
+                    <br />
                     <label>
                         SSID
-                        <input type="text" name="ssid" />
+                        <br />
+                        <input
+                            type="text"
+                            name="ssid"
+                            autocomplete="nickname"
+                        />
                     </label>
+                    <br />
                     <label>
                         Password
-                        <input type="password" name="password" />
+                        <br />
+                        <input
+                            type="password"
+                            name="password"
+                            autocomplete="current-password"
+                        />
                     </label>
                 </fieldset>
                 <div>
                     <label>
                         Telegram bot token
+                        <br />
                         <input type="text" name="token" />
                     </label>
                 </div>
